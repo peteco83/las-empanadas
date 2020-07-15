@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Karla', sans-serif;
+
   background-color: white;
 }
 
@@ -115,6 +116,7 @@ ul {
 
 .about h1 {
   font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 .about p {
@@ -306,4 +308,11 @@ h3 {
 .contact ul,
 .contact h1 {
   margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding-top: 20px;
 }
