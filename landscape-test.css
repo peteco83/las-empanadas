@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: white;
+
+}
+
+header>h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+/* menu landscape mode */
+
+.menu-mobile {
+    display: none;
+}
+
+.container {
+    display: none;
+}
+
+.main-container {
+    background-image: url("./images/empanadas-landing.jpg");
+    width: auto;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+header {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    border-radius: 200px;
+    display: block;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(116, 209, 240);
+    padding: 0;
+    text-align: center;
+}
+
+#menu {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menu ul li {
+    display: inline;
+    /* flex-direction: row; */
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#menu a {
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(25, 71, 77);
+}
+
+nav a:active {
+    color: white
+}
+
+/* start main part with information */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#about,
+#veggie-empanadas,
+#reservation {
+    /* background-color: rgba(59, 176, 191, 0.5); */
+    margin: 10px 0;
+    padding: 10px 0 30px 0;
+}
+
+#empanadas,
+#dulce-empanadas,
+.contact {
+    background-color: rgba(59, 176, 191, 0.5);
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0 30px 0;
+}
+
+#empanadas,
+#dulce-empanadas {
+    padding: 10px 0 10px 0;
+    margin-top: 0px;
+}
+
+.empanadas h2 {
+    padding-top: 40px;
+}
+
+section {
+    flex-basis: 100%
+}
+
+section h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+section p {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+section li {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    list-style: none;
+    padding: 10px;
+}
+
+
+.speisen img,
+.comidas img,
+.main-course img,
+.sweet img {
+    width: 100%;
+    height: 500px;
+    /* object-fit: cover; */
+}
+
+/* .container-main-course {
+    display: none;
+} */
+
+section,
+section h1 {
+    margin-top: 30px;
+}
+
+main li {
+    margin: 10px 0;
+}
+
+main a:link {
+    color: black;
+}
+
+main a:visited {
+    color: black;
+}
+
+main a:hover {
+    color: rgb(25, 71, 77);
+    ;
+}
+
+main a:active {
+    color: rgb(25, 71, 77);
+}
+
+.about,
+.main-course {
+    /* padding: 10px 0; */
+    /* margin: 50px 200px; */
+}
+
+.main-course {
+    padding-top: 0px;
+}
+
+/* .container {
+  display: none;
+} */
+
+.contact {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reservation {
+    width: 100%;
+}
+
+/* .contact h3 {
+  
+} */
+
+#reservation h2 {
+    padding-top: 20px;
+}
+
+.reservation img {
+    width: 80%;
+    height: auto;
+}
+
+.impressum {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    width: 100%;
+    height: ;
+}
+
+.impressum p {
+    font-size: 15px;
+}
+
+
+
+.social i {
+    font-size: 50px;
+}
+
+.social {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.social a:visited {
+    color: black;
+}
+
+.social a:link {
+    color: black;
+}
+
+/* end media from 700 px to 992 px*/
+
+@media (min-width: 992px) {
+
+    #menu {
+        height: 100px;
+    }
+
+    #menu ul li {
+        font-size: 1.5rem;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section p,
+    section li {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /* .about {
+        height: 250px;
+        padding-top: 50px;
+    } */
+
+    .logo {
+        width: 300px;
+        height: auto;
+        border-radius: 200px;
+        display: block;
+    }
+
+    .main-container {
+        /* display: block; */
+        /* background-image: url("./images/medialunas.jpg"); */
+        width: auto;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+    }
+
+    .speisen img,
+    .comidas img,
+    .veggie img,
+    .sweet img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .reservation img {
+        width: 60%;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    #menuToggle {
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .list-menu a {
+        font-size: 1.5rem;
+        padding-right: 15px;
+    }
+
+    .speisen img,
+    .comidas img,
+    .veggie img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .main-course,
+    .speisen,
+    .sweet {
+        margin-top: -10px;
+    }
+
+    .contact h2 {
+        margin-top: 50px;
+    }
+
+    .speisen {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
+    .empanadas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .veggie {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .veggie-empanadas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .alfajores-container {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .alfajores-container img {
+        width: 30%;
+        height: auto;
+
+    }
+
+
+
+    .precios-container {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .precios-container img {
+        width: 30%;
+        height: auto;
+    }
+
+    .precios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .alfajores {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+
+    }
+
+    .about-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+    .logo {
+        width: 500px;
+        border-radius: 300px;
+    }
+}
