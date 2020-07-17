@@ -1,29 +1,29 @@
-let mq = window.matchMedia('(max-width: 699px)')
+// let mq = window.matchMedia('(max-width: 699px)')
 
-if (mq.matches) {
+// if (mq.matches) {
 
-    let toggleStatus = 0;
-    const menuToggle = () => {
-        if (toggleStatus === 0) {
+let toggleStatus = 0;
+const menuToggle = () => {
+    if (toggleStatus === 0) {
 
-            document.getElementById("menu").style.transform = "translate(-20%)";
-            document.getElementById("icon").style.transform = "rotate(90deg)"
-            toggleStatus = 1;
-        } else if (toggleStatus === 1) {
-            document.getElementById("menu").style.transform = "translate(300%)"
-            document.getElementById("icon").style.transform = "rotate(0deg)"
-            toggleStatus = 0;
-        }
-    };
-    document.getElementById("icon").addEventListener("click", menuToggle);
+        document.getElementById("menu").style.transform = "translate(-20%)";
+        document.getElementById("icon").style.transform = "rotate(90deg)"
+        toggleStatus = 1;
+    } else if (toggleStatus === 1) {
+        document.getElementById("menu").style.transform = "translate(300%)"
+        document.getElementById("icon").style.transform = "rotate(0deg)"
+        toggleStatus = 0;
+    }
+};
+document.getElementById("icon").addEventListener("click", menuToggle);
 
-    const listMenu = document.querySelectorAll(".list-menu");
+const listMenu = document.querySelectorAll(".list-menu");
 
-    listMenu.forEach(el => {
-        el.addEventListener("click", menuToggle);
-    });
+listMenu.forEach(el => {
+    el.addEventListener("click", menuToggle);
+});
 
-}
+// }
 
 // else {
 
